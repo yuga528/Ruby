@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+  - 2.2
+  - ruby-head
+  - jruby
+
+matrix:
+  allow_failures:
+  - rvm: jruby
+  - rvm: ruby-head
+  fast_finish: true
+branches:
+  only:
+  - master
+  - test
